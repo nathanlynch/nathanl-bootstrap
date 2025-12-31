@@ -1,20 +1,14 @@
 ---
-- name: Bootstrap a development host
+- name: Bootstrap a Fedora development host
   hosts: all
   become: yes
+  vars_files:
+    - pkglists/fedora.yml
   tasks:
-    - name: Install packages
+    - name: Install workstation packages
       ansible.builtin.dnf:
-        pkg:
-          - binutils
-          - bison
-          - clang
-          - flex
-          - gcc
-          - gdb
-          - git-core
-          - lld
-          - make
+        name: "{{ workstation_pkgs }}"
+        state: present
 
     - name: Create development user
       ansible.builtin.user:

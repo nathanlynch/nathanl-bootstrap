@@ -1,0 +1,7 @@
+workstation_pkgs:
+  - adobe-source-code-pro-fonts
+  - emacs-notmuch
+  - emacs-pgtk
+  - ibm-plex-mono-fonts
+  - libvterm
+  - libvterm-devel
