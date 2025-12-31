@@ -10,10 +10,12 @@ base_packages:
   - git
 
 username: nathanl
+realname: "Nathan Lynch"
 
 # User configuration
 dev_user:
   name: "{{ username }}"
+  comment: "{{ realname }}"
   groups:
     - wheel
     - kvm
