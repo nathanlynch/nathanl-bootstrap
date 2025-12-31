@@ -1,0 +1,14 @@
+all:
+  children:
+    workstations:
+      hosts:
+        local:
+          ansible_host: localhost
+          ansible_connection: local
+    
+    servers:
+      hosts:
+        # Add remote servers here as needed
+        # dev-server-01:
+        #   ansible_host: 192.168.1.100
+        #   ansible_user: root
