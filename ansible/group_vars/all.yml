@@ -9,16 +9,16 @@ base_packages:
   - chezmoi
   - git
 
-username: nathanl
-realname: "Nathan Lynch"
+login: nathanl
+name: "Nathan Lynch"
 
 # User configuration
 dev_user:
-  name: "{{ username }}"
-  comment: "{{ realname }}"
+  login: "{{ login }}"
+  name: "{{ name }}"
   groups:
     - wheel
     - kvm
   shell: /bin/bash
   ssh_key_type: ed25519
-  ssh_key_comment: "{{ username }}@{{ ansible_hostname }}"
+  ssh_key_comment: "{{ name }}@{{ ansible_hostname }}"

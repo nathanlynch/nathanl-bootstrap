@@ -18,7 +18,8 @@
 
     - name: Create development user
       ansible.builtin.user:
-        name: "{{ dev_user.name }}"
+        name: "{{ dev_user.login }}"
+        comment: "{{ dev_user.name }}"
         groups: "{{ dev_user.groups }}"
         append: yes
         shell: "{{ dev_user.shell }}"
