@@ -1,0 +1,20 @@
+---
+# Packages installed on ALL hosts
+base_packages:
+  - gcc
+  - clang
+  - make
+  - tmux
+  - ncdu
+  - chezmoi
+  - git
+
+# User configuration
+dev_user:
+  name: nathanl
+  groups:
+    - wheel
+    - kvm
+  shell: /bin/bash
+  ssh_key_type: ed25519
+  ssh_key_comment: "{{ dev_user.name }}@{{ ansible_hostname }}"

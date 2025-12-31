@@ -1,0 +1,29 @@
+---
+- name: Bootstrap a development host
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install packages
+      ansible.builtin.dnf:
+        pkg:
+          - binutils
+          - bison
+          - clang
+          - gcc
+          - gdb
+          - git-core
+          - lld
+          - make
+          - yacc
+
+    - name: Create development user
+      ansible.builtin.user:
+        name: "{{ dev_user.name }}"
+        groups: "{{ dev_user.groups }}"
+        append: yes
+        shell: "{{ dev_user.shell }}"
+        create_home: yes
+        generate_ssh_key: yes
+        ssh_key_type: "{{ dev_user.ssh_key_type }}"
+        ssh_key_comment: "{{ dev_user.ssh_key_comment }}"
+        state: present
