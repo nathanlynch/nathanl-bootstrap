@@ -1,14 +1,4 @@
 ---
-# Packages installed on ALL hosts
-base_packages:
-  - gcc
-  - clang
-  - make
-  - tmux
-  - ncdu
-  - chezmoi
-  - git
-
 login: nathanl
 realname: "Nathan Lynch"
 
