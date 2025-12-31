@@ -21,4 +21,4 @@ dev_user:
     - kvm
   shell: /bin/bash
   ssh_key_type: ed25519
-  ssh_key_comment: "{{ name }}@{{ ansible_hostname }}"
+  ssh_key_comment: "{{ login }}@{{ ansible_hostname }}"
