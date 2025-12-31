@@ -9,12 +9,12 @@
           - binutils
           - bison
           - clang
+          - flex
           - gcc
           - gdb
           - git-core
           - lld
           - make
-          - yacc
 
     - name: Create development user
       ansible.builtin.user:
