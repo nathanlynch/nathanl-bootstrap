@@ -8,6 +8,7 @@
     - name: Install workstation packages
       ansible.builtin.dnf:
         name: "{{ workstation_pkgs }}"
+        install_weak_deps: false
         state: present
 
     - name: Create development user
