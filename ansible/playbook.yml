@@ -5,9 +5,9 @@
   vars_files:
     - pkglists/fedora.yml
   tasks:
-    - name: Install workstation packages
+    - name: Install all packages
       ansible.builtin.dnf:
-        name: "{{ workstation_pkgs }}"
+        name: "{{ workstation_pkgs }} {{ kernel_dev_pkgs }}"
         install_weak_deps: false
         state: present
 
