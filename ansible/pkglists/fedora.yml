@@ -1,3 +1,4 @@
+# Packages I want on a graphical workstation.
 workstation_pkgs:
   - adobe-source-code-pro-fonts
   - emacs-notmuch
@@ -5,3 +6,38 @@ workstation_pkgs:
   - ibm-plex-mono-fonts
   - libvterm
   - libvterm-devel
+
+# Packages needed for my typical kernel development activities,
+# derived from "dnf builddep kernel" with some editing.
+kernel_dev_pkgs:
+  - asciidoc
+  - bash
+  - bc
+  - binutils
+  - bison
+  - bzip2
+  - clang
+  - coreutils
+  - diffutils
+  - dwarves
+  - elfutils
+  - findutils
+  - flex
+  - gawk
+  - gcc
+  - git-core
+  - hostname
+  - lld
+  - m4
+  - make
+  - ncurses-devel
+  - newt-devel
+  - openssl
+  - openssl-devel
+  - perl-interpreter
+  - pesign
+  - python3
+  - tar
+  - which
+  - xz
+  - zstd
