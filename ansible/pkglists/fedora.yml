@@ -41,3 +41,15 @@ kernel_dev_pkgs:
   - which
   - xz
   - zstd
+
+# Other things I would conceivably need on a headless/remote system.
+cli_pkgs:
+  - ccache
+  - chezmoi
+  - clang-tools-extra # for clangd
+  - git-email
+  - msmtp
+  - ncdu
+  - pipx # for b4 and afew
+  - procps-ng
+  - tmux

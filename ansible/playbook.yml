@@ -7,7 +7,7 @@
   tasks:
     - name: Install all packages
       ansible.builtin.dnf:
-        name: "{{ gui_pkgs + kernel_dev_pkgs }}"
+        name: "{{ cli_pkgs + gui_pkgs + kernel_dev_pkgs }}"
         install_weak_deps: false
         state: present
 
