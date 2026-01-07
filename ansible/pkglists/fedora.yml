@@ -1,10 +1,10 @@
 # Packages I want on a graphical workstation.
-workstation_pkgs:
+gui_pkgs:
   - adobe-source-code-pro-fonts
   - emacs-notmuch
   - emacs-pgtk
   - ibm-plex-mono-fonts
-  - libvterm
+  - libvterm # for vterm in emacs
   - libvterm-devel
 
 # Packages needed for my typical kernel development activities,
