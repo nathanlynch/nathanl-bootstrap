@@ -5,6 +5,10 @@
   vars_files:
     - pkglists/fedora.yml
   tasks:
+    - name: Print ansible_virtualization_type
+      ansible.builtin.debug:
+        var: ansible_virtualization_type
+
     - name: Install all packages
       ansible.builtin.dnf:
         name: "{{ cli_pkgs + gui_pkgs + kernel_dev_pkgs }}"
