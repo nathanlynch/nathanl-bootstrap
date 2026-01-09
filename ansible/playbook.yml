@@ -37,9 +37,9 @@
         mode: '0644'
         force: true
         backup: true
-      when:
-        # FIME: this isn't working on my F43 container, a_v_type is
-        # "kvm" when running the playbook, even though ansible -m
-        # setup shows "wsl".
-        - ansible_virtualization_type is defined
-        - ansible_virtualization_type == "wsl"
+      # when:
+      #   # FIME: this isn't working on my F43 container, a_v_type is
+      #   # "container" when running the playbook, even though ansible
+      #   # -m setup shows "wsl".
+      #   - ansible_virtualization_type is defined
+      #   - ansible_virtualization_type == "wsl"
