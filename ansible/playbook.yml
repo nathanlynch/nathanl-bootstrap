@@ -13,7 +13,8 @@
       ansible.builtin.dnf:
         name: "{{ cli_pkgs + gui_pkgs + kernel_dev_pkgs }}"
         install_weak_deps: false
-        state: present
+        update_cache: true
+        state: latest
 
     - name: Create development user
       ansible.builtin.user:
