@@ -3,7 +3,7 @@ gui_pkgs:
   - adobe-source-code-pro-fonts
   - emacs-gtk+x11 # pgtk doesn't work well in WSL2, even though it's Wayland?
   - emacs-notmuch
-  - emacs-pgtk
+#  - emacs-pgtk
   - ibm-plex-mono-fonts
   - libvterm # for vterm in emacs
   - libvterm-devel
