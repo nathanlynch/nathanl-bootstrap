@@ -9,11 +9,16 @@
       ansible.builtin.debug:
         var: ansible_virtualization_type
 
-    - name: Install all packages
+    - name: Update all installed packages to the latest version
+      ansible.builtin.dnf:
+        state: latest
+        name: "*"
+        update_cache: true
+
+    - name: Install packages
       ansible.builtin.dnf:
         name: "{{ cli_pkgs + gui_pkgs + kernel_dev_pkgs }}"
         install_weak_deps: false
-        update_cache: true
         state: latest
 
     - name: Create development user
