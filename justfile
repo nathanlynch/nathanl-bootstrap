@@ -1,2 +1,2 @@
 bootstrap-local:
-	cd ansible && ansible-playbook -i inventory.yml playbook.yml --limit local -vv
+	cd ansible && ansible-playbook -i inventory.yml playbook.yml --limit local --diff -vv
