@@ -7,6 +7,7 @@ gui_pkgs:
   - ibm-plex-mono-fonts
   - libvterm # for vterm in emacs
   - libvterm-devel
+  - cmake # for emacs-vterm's install process
 
 # Packages needed for my typical kernel development activities,
 # derived from "dnf builddep kernel" with some editing.
