@@ -51,6 +51,7 @@ cli_pkgs:
   - chezmoi
   - clang-tools-extra # for clangd
   - git-email
+  - ipmitool # for lab system control
   - msmtp
   - ncdu
   - pipx # for b4 and afew
