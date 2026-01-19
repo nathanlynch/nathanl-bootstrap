@@ -30,6 +30,7 @@ kernel_dev_pkgs:
   - git-core
   - hostname
   - lld
+  - llvm
   - m4
   - make
   - ncurses-devel
